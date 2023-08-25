@@ -16,7 +16,7 @@ import (
 	"reflect"
 	"testing"
 
-	models "github.com/firecracker-microvm/firecracker-go-sdk/client/models"
+	models "github.com/valyentdev/firecracker-go-sdk/client/models"
 )
 
 func TestDrivesBuilder(t *testing.T) {

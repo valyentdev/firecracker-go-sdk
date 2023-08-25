@@ -22,7 +22,7 @@ This library requires Go 1.17 or later and can be used with Go modules.
 
 BUG(aws): There are some Firecracker features that are not yet supported by the
 SDK.  These are tracked as GitHub issues with the firecracker-feature label:
-https://github.com/firecracker-microvm/firecracker-go-sdk/issues?q=is%3Aissue+is%3Aopen+label%3Afirecracker-feature
+https://github.com/valyentdev/firecracker-go-sdk/issues?q=is%3Aissue+is%3Aopen+label%3Afirecracker-feature
 
 This library is licensed under the Apache 2.0 License.
 */

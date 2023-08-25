@@ -15,7 +15,7 @@ package firecracker
 import (
 	"strconv"
 
-	models "github.com/firecracker-microvm/firecracker-go-sdk/client/models"
+	models "github.com/valyentdev/firecracker-go-sdk/client/models"
 )
 
 const rootDriveName = "root_drive"
@@ -113,7 +113,7 @@ func WithCacheType(cacheType string) DriveOpt {
 
 // WithIoEngine sets the io engine of the drive
 // Defaults to Sync, Async is in developer preview at the moment
-// https://github.com/firecracker-microvm/firecracker/blob/v1.1.0/docs/api_requests/block-io-engine.md
+// https://github.com/valyentdev/firecracker/blob/v1.1.0/docs/api_requests/block-io-engine.md
 func WithIoEngine(ioEngine string) DriveOpt {
 	return func(d *models.Drive) {
 		d.IoEngine = String(ioEngine)

@@ -24,7 +24,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	models "github.com/firecracker-microvm/firecracker-go-sdk/client/models"
+	models "github.com/valyentdev/firecracker-go-sdk/client/models"
 )
 
 const numberOfVMs = 200
@@ -50,9 +50,9 @@ func createMachine(ctx context.Context, name string, forwardSignals []os.Signal)
 		MetricsFifo:     metrics,
 		LogLevel:        "Info",
 		MachineCfg: models.MachineConfiguration{
-			VcpuCount:   Int64(1),
-			MemSizeMib:  Int64(256),
-			Smt:         Bool(false),
+			VcpuCount:  Int64(1),
+			MemSizeMib: Int64(256),
+			Smt:        Bool(false),
 		},
 		Drives: []models.Drive{
 			{

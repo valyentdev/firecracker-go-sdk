@@ -204,7 +204,7 @@ func (defaultNetlinkOps) CreateTap(name string, mtu int, ownerUID, ownerGID int)
 		Mode: netlink.TUNTAP_MODE_TAP,
 
 		// Firecracker does not support multiqueue tap devices at this time:
-		// https://github.com/firecracker-microvm/firecracker/issues/750
+		// https://github.com/valyentdev/firecracker/issues/750
 		Queues: 1,
 
 		Flags: netlink.TUNTAP_ONE_QUEUE | // single queue tap device

@@ -32,7 +32,7 @@ GID = $(shell id -g)
 firecracker_version=v1.4.1
 
 # The below files are needed and can be downloaded from the internet
-release_url=https://github.com/firecracker-microvm/firecracker/releases/download/$(firecracker_version)/firecracker-$(firecracker_version)-$(arch).tgz
+release_url=https://github.com/valyentdev/firecracker/releases/download/$(firecracker_version)/firecracker-$(firecracker_version)-$(arch).tgz
 
 testdata_objects = \
 $(FC_TEST_DATA_PATH)/firecracker \
@@ -132,7 +132,7 @@ $(FC_TEST_DATA_PATH)/ltag:
 test-images: $(FIRECRACKER_BIN) $(JAILER_BIN)
 
 $(FIRECRACKER_DIR):
-	- git clone https://github.com/firecracker-microvm/firecracker.git $(FIRECRACKER_DIR)
+	- git clone https://github.com/valyentdev/firecracker.git $(FIRECRACKER_DIR)
 
 $(FIRECRACKER_BIN) $(JAILER_BIN): $(FIRECRACKER_DIR)
 	$(FIRECRACKER_DIR)/tools/devtool -y build --release

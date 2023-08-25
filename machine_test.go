@@ -42,10 +42,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/crypto/ssh"
 
-	models "github.com/firecracker-microvm/firecracker-go-sdk/client/models"
-	ops "github.com/firecracker-microvm/firecracker-go-sdk/client/operations"
-	"github.com/firecracker-microvm/firecracker-go-sdk/fctesting"
-	"github.com/firecracker-microvm/firecracker-go-sdk/internal"
+	models "github.com/valyentdev/firecracker-go-sdk/client/models"
+	ops "github.com/valyentdev/firecracker-go-sdk/client/operations"
+	"github.com/valyentdev/firecracker-go-sdk/fctesting"
+	"github.com/valyentdev/firecracker-go-sdk/internal"
 )
 
 const (
@@ -1254,7 +1254,7 @@ func TestCaptureFifoToFile_nonblock(t *testing.T) {
 	// captureFifoToFile. This is due to the fifo being opened with O_NONBLOCK,
 	// which causes io.Copy to exit immediately with no error.
 	//
-	// https://github.com/firecracker-microvm/firecracker-go-sdk/issues/156
+	// https://github.com/valyentdev/firecracker-go-sdk/issues/156
 	time.Sleep(250 * time.Millisecond)
 
 	f, err := os.OpenFile(fifoPath, os.O_RDWR, 0600)

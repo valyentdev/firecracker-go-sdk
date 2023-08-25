@@ -17,9 +17,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/firecracker-microvm/firecracker-go-sdk"
-	models "github.com/firecracker-microvm/firecracker-go-sdk/client/models"
 	"github.com/stretchr/testify/assert"
+	"github.com/valyentdev/firecracker-go-sdk"
+	models "github.com/valyentdev/firecracker-go-sdk/client/models"
 )
 
 func TestRateLimiter(t *testing.T) {

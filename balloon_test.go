@@ -17,16 +17,16 @@ import (
 	"reflect"
 	"testing"
 
-	models "github.com/firecracker-microvm/firecracker-go-sdk/client/models"
+	models "github.com/valyentdev/firecracker-go-sdk/client/models"
 )
 
 var (
-	expectedAmountMib              = int64(6)
+	expectedAmountMib             = int64(6)
 	expectedDeflateOnOom          = true
 	expectedStatsPollingIntervals = int64(1)
 
 	expectedBalloon = models.Balloon{
-		AmountMib:              &expectedAmountMib,
+		AmountMib:             &expectedAmountMib,
 		DeflateOnOom:          &expectedDeflateOnOom,
 		StatsPollingIntervals: expectedStatsPollingIntervals,
 	}

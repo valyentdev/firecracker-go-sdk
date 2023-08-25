@@ -38,7 +38,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	models "github.com/firecracker-microvm/firecracker-go-sdk/client/models"
+	models "github.com/valyentdev/firecracker-go-sdk/client/models"
 )
 
 const (

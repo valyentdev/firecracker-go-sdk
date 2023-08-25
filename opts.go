@@ -16,8 +16,8 @@ package firecracker
 import (
 	"os/exec"
 
-	"github.com/firecracker-microvm/firecracker-go-sdk/client/models"
 	"github.com/sirupsen/logrus"
+	"github.com/valyentdev/firecracker-go-sdk/client/models"
 )
 
 // Opt represents a functional option to help modify functionality of a Machine.

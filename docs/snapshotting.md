@@ -2,9 +2,10 @@
 
 Snapshotting is currently supported in the Firecracker Go SDK using Firecracker v1.0.0's API.
 
-Due to [known issues and limitations](https://github.com/firecracker-microvm/firecracker/blob/firecracker-v1.0/docs/snapshotting/snapshot-support.md#known-issues-and-limitations), it is currently not recommended to use snapshots in production.
+Due to [known issues and limitations](https://github.com/valyentdev/firecracker/blob/firecracker-v1.0/docs/snapshotting/snapshot-support.md#known-issues-and-limitations), it is currently not recommended to use snapshots in production.
 
 Snapshots created in this version only save the following:
+
 - guest memory
 - emulated hardware state (both KVM & Firecracker emulated hardware)
 
@@ -14,7 +15,7 @@ In particular, drives must be in the same location as they were when loading the
 
 Snapshots can only be loaded upon device startup. Upon loading the snapshot, the emulated hardware state is restored, and normal VM activites can resume right where they left off.
 
-Read more in-depth documentation on Firecracker's snapshotting tool [here](https://github.com/firecracker-microvm/firecracker/blob/firecracker-v1.0/docs/snapshotting/snapshot-support.md).
+Read more in-depth documentation on Firecracker's snapshotting tool [here](https://github.com/valyentdev/firecracker/blob/firecracker-v1.0/docs/snapshotting/snapshot-support.md).
 
 ## Using Snapshots via Firecracker Go SDK
 
@@ -22,7 +23,7 @@ Snapshots can be created via a machine object's `CreateSnapshot()` function. The
 
 ```
 import (
-	sdk "github.com/firecracker-microvm/firecracker-go-sdk"
+	sdk "github.com/valyentdev/firecracker-go-sdk"
 )
 
 ...

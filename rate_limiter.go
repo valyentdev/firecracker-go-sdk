@@ -16,7 +16,7 @@ package firecracker
 import (
 	"time"
 
-	models "github.com/firecracker-microvm/firecracker-go-sdk/client/models"
+	models "github.com/valyentdev/firecracker-go-sdk/client/models"
 )
 
 // RateLimiterOpt represents a functional option for rate limiting construction

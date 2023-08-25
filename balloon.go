@@ -13,7 +13,7 @@
 package firecracker
 
 import (
-	models "github.com/firecracker-microvm/firecracker-go-sdk/client/models"
+	models "github.com/valyentdev/firecracker-go-sdk/client/models"
 )
 
 // BalloonDevice is a builder that will create a balloon used to set up
@@ -27,7 +27,7 @@ type BalloonOpt func(*models.Balloon)
 // NewBalloonDevice will return a new BalloonDevice.
 func NewBalloonDevice(amountMib int64, deflateOnOom bool, opts ...BalloonOpt) BalloonDevice {
 	b := models.Balloon{
-		AmountMib:     &amountMib,
+		AmountMib:    &amountMib,
 		DeflateOnOom: &deflateOnOom,
 	}
 

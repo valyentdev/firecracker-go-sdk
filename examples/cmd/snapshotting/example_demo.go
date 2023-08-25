@@ -27,8 +27,8 @@ import (
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/sys/unix"
 
-	sdk "github.com/firecracker-microvm/firecracker-go-sdk"
-	models "github.com/firecracker-microvm/firecracker-go-sdk/client/models"
+	sdk "github.com/valyentdev/firecracker-go-sdk"
+	models "github.com/valyentdev/firecracker-go-sdk/client/models"
 )
 
 const (

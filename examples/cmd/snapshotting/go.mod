@@ -3,7 +3,7 @@ module main
 go 1.18
 
 require (
-	github.com/firecracker-microvm/firecracker-go-sdk v0.22.1-0.20220715225323-d48665a4cd7a
+	github.com/valyentdev/firecracker-go-sdk v0.22.1-0.20220715225323-d48665a4cd7a
 	golang.org/x/crypto v0.11.0
 	golang.org/x/sys v0.10.0
 )
@@ -40,4 +40,4 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
-replace github.com/firecracker-microvm/firecracker-go-sdk => ../../..
+replace github.com/valyentdev/firecracker-go-sdk => ../../..

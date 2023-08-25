@@ -147,7 +147,7 @@ func connectMsg(port uint32) string {
 	// The message a host-side connection must write after connecting to a firecracker
 	// vsock unix socket in order to establish a connection with a guest-side listener
 	// at the provided port number. This is specified in Firecracker documentation:
-	// https://github.com/firecracker-microvm/firecracker/blob/main/docs/vsock.md#host-initiated-connections
+	// https://github.com/valyentdev/firecracker/blob/main/docs/vsock.md#host-initiated-connections
 	return fmt.Sprintf("CONNECT %d\n", port)
 }
 
@@ -185,7 +185,7 @@ func tryConnect(logger *logrus.Entry, udsPath string, port uint32, c config) (ne
 	}
 
 	// The line would be "OK <assigned_hostside_port>\n", but we don't use the hostside port here.
-	// https://github.com/firecracker-microvm/firecracker/blob/main/docs/vsock.md#host-initiated-connections
+	// https://github.com/valyentdev/firecracker/blob/main/docs/vsock.md#host-initiated-connections
 	if !strings.HasPrefix(line, "OK ") {
 		return nil, ackError{
 			cause: fmt.Errorf(`expected to read "OK <port>", but instead read %q`, line),

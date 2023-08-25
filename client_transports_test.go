@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/firecracker-microvm/firecracker-go-sdk/client/operations"
 	"github.com/go-openapi/runtime"
 	"github.com/stretchr/testify/assert"
+	"github.com/valyentdev/firecracker-go-sdk/client/operations"
 )
 
 const expectedEndpointPath = "/test-operation"

@@ -23,7 +23,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/vishvananda/netlink"
 
-	"github.com/firecracker-microvm/firecracker-go-sdk/cni/internal"
+	"github.com/valyentdev/firecracker-go-sdk/cni/internal"
 )
 
 func TestMTUOf(t *testing.T) {

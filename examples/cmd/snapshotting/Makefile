@@ -11,7 +11,7 @@
 # express or implied. See the License for the specific language governing
 # permissions and limitations under the License.
 
-RELEASE_URL=https://github.com/firecracker-microvm/firecracker/releases
+RELEASE_URL=https://github.com/valyentdev/firecracker/releases
 VER=v1.4.1
 
 ARCH=$(shell uname -m)
@@ -61,7 +61,7 @@ firecracker:
 	rm -rf release-${VER}-${ARCH}
 
 # Use rootfs and ssh key pre-built from S3 following firecracker getting-started guide
-# https://github.com/firecracker-microvm/firecracker/blob/main/docs/getting-started.md
+# https://github.com/valyentdev/firecracker/blob/main/docs/getting-started.md
 # TODO: Change the pre-built rootfs to ubuntu 22.04 once firecracker team has that in the public S3 bucket
 # Currently the S3 bucket only has ubuntu 18.04 image
 root-drive-with-ssh.img root-drive-ssh-key:
